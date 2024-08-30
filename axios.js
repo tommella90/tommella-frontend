@@ -1,8 +1,12 @@
 // src/axios.js
 import axios from 'axios';
 
+const baseURL = process.env.NODE_ENV === 'development'
+  ? process.env.VUE_APP_API_URL_DEV
+  : process.env.VUE_APP_API_URL_PROD;
+
 const instance = axios.create({
-  baseURL: 'https://tommella-cv-prod-ee14d9b8bb74.herokuapp.com/', 
+  baseURL: baseURL,
   timeout: 1000,
   headers: {
     'Content-Type': 'application/json',
