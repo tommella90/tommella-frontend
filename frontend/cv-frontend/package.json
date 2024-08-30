@@ -5,12 +5,12 @@
   "engines": {
     "node": "20.x"
   },
-  "private": true,
+    "private": true,
   "scripts": {
-    "serve": "cd cv-frontend && npx vue-cli-service serve",
-    "build": "cd cv-frontend && npx vue-cli-service build",
-    "lint": "cd cv-frontend && npx vue-cli-service lint",
-    "deploy": "gh-pages -d cv-frontend/dist"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@vue/cli-service": "~5.0.0",
