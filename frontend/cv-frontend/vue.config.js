@@ -4,7 +4,8 @@
 // })
 
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/tommella-frontend/'
-    : '/'
-};
+    publicPath: process.env.NODE_ENV === 'production'
+      ? '/tommella-frontend/'
+      : '/'
+  };
+  

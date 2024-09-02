@@ -1,25 +1,20 @@
 <template>
   <div id="app">
-    <AboutView/>
-    <ExperiencesView/>
-    <EducationsView/>
+    <router-view/>
     <ParticlesBackgroundView/>
   </div>
 </template>
 
 <script>
-import AboutView from './components/AboutView.vue';
-import EducationsView from './components/EducationsView.vue';
-import ExperiencesView from './components/ExperiencesView.vue';
 import ParticlesBackgroundView from './components/ParticlesBackgroundView.vue';
 
 export default {
   name: 'App',
   components: {
     ParticlesBackgroundView,
-    AboutView,
-    ExperiencesView,
-    EducationsView,
+  },
+  mounted() {
+    console.log('App component mounted');
   }
 }
 </script>
