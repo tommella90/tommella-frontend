@@ -53,8 +53,10 @@
     },
     methods: {
       async fetchEducations() {
+        console.log('VUE_APP_API_URL:', process.env.VUE_APP_API_URL);
+
         try {
-          const response = await axios.get('/education/');
+          const response = await axios.get('https://tommella-cv-prod-ee14d9b8bb74.herokuapp.com/education/');
           this.educations = response.data;
         } catch (error) {
           console.error(error);
